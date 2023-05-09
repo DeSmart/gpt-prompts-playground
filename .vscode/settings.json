@@ -1,0 +1,69 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.linting.enabled": true,
+  "python.formatting.provider": "none",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.autoComplete.extraPaths": [
+    "./",
+    "./commands",
+  ],
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnPaste": false,
+    "editor.formatOnSaveMode": "file",
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "timonwong.shellcheck"
+  },
+  "peacock.color": "#c0111e",
+  "python.linting.pylamaEnabled": false,
+  "editor.detectIndentation": false,
+  "indentRainbow.colors": [
+    "rgba(247, 37, 133,0.15)",
+    "rgba(181, 23, 158,0.15)",
+    "rgba(114, 9, 183, 0.15)",
+    "rgba(86, 11, 173,0.15)",
+    "rgba(72, 12, 168,0.15)",
+    "rgba(58, 12, 163,0.15)",
+    "rgba(63, 55, 201,0.15)",
+    "rgba(63, 55, 201,0.1)",
+    "rgba(63, 55, 201,0.05)",
+    "rgba(63, 55, 201,0.025)"
+  ],
+  "python.analysis.extraPaths": [
+    "./",
+    "./commands"
+  ],
+  "docwriter.style": "NumPy",
+  "docwriter.progress.trackFunctions": true,
+  "docwriter.progress.trackMethods": true,
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "workbench.colorCustomizations": {
+    "commandCenter.border": "#e7e7e799",
+    "statusBar.background": "#c0111e",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#eb1929",
+    "statusBarItem.remoteBackground": "#c0111e",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "tab.activeBorder": "#eb1929",
+    "titleBar.activeBackground": "#910d17",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#910d1799",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "peacock.remoteColor": "#04e618",
+  "markdown-toc.insertAnchor": true
+}
