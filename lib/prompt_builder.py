@@ -1,8 +1,8 @@
 import json
 from dataclasses import dataclass
 
-from rich.traceback import install
 from rich.console import Console
+from rich.traceback import install
 
 install()
 console = Console()
@@ -40,11 +40,11 @@ class PromptBuilder:
         """Add standard text prompt."""
         self._add_message("user", text)
 
-    def json(self, template: any) -> None:
+    def json(self, template) -> None:
         """Add JSON prompt, enforcing strict JSON format on the output from GPT"""
         json_template = json.dumps(template, separators=(",", ":"))
 
-        prompt = f"Make a JSON formatted output, without spaces and new lines with format: `{json_template}`. Make output only proper JSON file, nothing else."  # pylint: disable=line-too-long
+        prompt = f"IMPORTANT: Make a JSON formatted output, without spaces and new lines with format: `{json_template}`. Make output only proper JSON file, nothing else."  # pylint: disable=line-too-long
         self._add_message("system", prompt)
 
     def get_messages(self) -> list:

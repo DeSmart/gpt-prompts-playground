@@ -60,7 +60,7 @@ def recommend_prompt_1(**kwargs):  # pylint: disable=missing-function-docstring
 @timer
 def recommend_prompt_2(**kwargs):  # pylint: disable=missing-function-docstring
     logging.info(
-        "Rekomenduje przepis na obioad, podstawie listy produktów które mam w koszyku"
+        "Rekomenduje przepis na obiad, podstawie listy produktów które mam w koszyku"
     )
     prompt = PromptBuilder(temperature=0.8, max_tokens=500, **kwargs)
 
